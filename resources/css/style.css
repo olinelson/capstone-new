@@ -1,0 +1,240 @@
+/* page setup */
+html{
+  font-size: 12px;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+  font-family: 'Nunito', sans-serif;
+
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+h3 , h4 , h5 , h6{
+  font-size: 2rem;
+}
+
+
+
+p{
+font-family: 'Quattrocento', serif;
+font-size: 1.5rem;
+}
+
+a , a:active , a::after {
+  font-family: 'Quattrocento', serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+/* DESKTOP SITE */
+
+.mobileimg , .menubar-mobile{
+  display: none;
+}
+
+
+
+/* header */
+
+header{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.header-container{
+  width: 100%;
+  max-width: 1250px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.header-container .logo{
+  display: flex;
+  flex-direction: row;
+  margin: 0 1rem 0 0;
+}
+.header-container .logo img{
+  margin: 0 1rem 0 0;
+}
+.header-container .menubar a{
+  margin: 0.5rem;
+
+}
+
+/* colors */
+html{
+  color:white;
+}
+a{
+  color: ;
+}
+
+h1, h2 ,h3 , h4 ,h5 ,h6{
+  color: white;
+}
+
+body{
+  background-color: white;
+  background-image: url(../images/zig-zag-wool.png);
+}
+
+header{
+  background-color:#ffffff1a;
+}
+.background1{
+  background-color: #ffffff1a;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+.background3{
+  background-color: #ffffff1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+
+/* main page */
+
+
+.container1 , .container2 , .container3 , .container4{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1250px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 5rem ;
+}
+
+
+
+.container1 .sidebox{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-content: center;
+}
+
+.container1 .sidebox .mediabox{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 .sidebox .mediabox p{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.button{
+  width: 100%;
+  padding: 8px 0;
+  background-color: ;
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+.button a{
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+.featurebox{
+  width: 60%;
+  padding: 0;
+  margin: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.featurebox img{
+  width: 100%;
+  height: auto;
+}
+
+.featurebox h2{
+  margin: 1rem 0 1rem 0;
+}
+
+.sidebox{
+  width: 30%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebox .mediabox{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.sidebox .mediabox img{
+  width: 42%;
+  height: auto;
+  margin: 0 0 1rem 0
+}
+
+.mediabox{
+  display: flex;
+  width: 30%;
+  overflow: hidden;
+  flex-direction: column;
+  margin: 1rem;
+  padding; 0;
+}
+
+.mediabox img{
+  width: 100%;
+  height: auto;
+}
+
+.featurebox video{
+  width: 100%;
+  height: auto;
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footercontainer{
+  width: 100%;
+  max-width:1250px;
+  text-align: left;
+  margin: 1rem;
+}
+.container3head , .container4head{
+  margin: 0 0 2rem 0;
+}
