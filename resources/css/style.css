@@ -8,18 +8,34 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 
 }
 
+
 h1{
   font-size: 3rem;
   font-weight: bold;
 }
-
 h2{
-  font-size: 2.5rem;
+  font-size: 2.5rem
 }
-h3 , h4 , h5 , h6{
+h3{
+  font-size:2rem;
+}
+h4{
   font-size: 2rem;
 }
+h5{
+  font-size: 1.5rem;
+}
+h6{
+  font-size: 1rem;
+}
 
+.quote{
+  font-style: italic;
+}
+.citation{
+  font-weight: bold;
+  margin: 1rem;
+}
 
 
 p{
@@ -49,6 +65,7 @@ body{
 
 
 
+
 /* header */
 
 header{
@@ -62,7 +79,7 @@ header{
 }
 .header-container{
   width: 100%;
-  max-width: 1250px;
+  max-width: 1500px;
   margin: 1rem;
   display: flex;
   flex-direction: row;
@@ -91,10 +108,20 @@ html{
 a{
   color:white;
 }
+a:hover{
+  color: #efee8b;
+}
 
-h1, h2 ,h3 , h4 ,h5 ,h6{
+ h2 ,h3 , h4 ,h5 ,h6{
   color: white;
 }
+h1{
+  color: #efee8b;
+}
+.header-container h1{
+  color: white;
+}
+
 
 body{
   background-color: white;
@@ -114,6 +141,18 @@ body{
   width: 100%;
 }
 
+.container2 .featurebox h2{
+  color: #6783ad;
+}
+.container2 .sidebox .mediabox h4{
+
+}
+
+.container3head h1{
+  color: #71a65c;
+}
+
+
 
 
 
@@ -121,15 +160,31 @@ body{
 /* main page */
 
 
-.container1 , .container2 , .container3 , .container4{
+.container2 , .container3 , .container4{
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1250px;
+  max-width: 1500px;
   overflow: hidden;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 0 5rem ;
+}
+
+.container1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 2000px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4rem 0 5rem ;
+}
+
+.container1 .featurebox{
+  padding: 0;
+  margin: 0 1rem 0 0;
 }
 
 
@@ -139,36 +194,48 @@ body{
   flex-direction:row;
   justify-content: center;
   align-content: center;
-  background-color: ;
+  padding: 0;
+  margin: 0;
+
 }
 
 .container1 .sidebox .mediabox{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+
 }
 
 .container1 .sidebox .mediabox p{
   font-weight: bold;
   font-style: italic;
+  margin: 0;
 }
+
 
 .button{
   width: 100%;
   padding: 8px 0;
-  background-color:#ffffff1a ;
+  background-color:#ffffff1a;
   text-align: center;
-  margin: 1rem 0 0 0;
+  margin: 1rem;
+  border-radius: 5px;
 }
 .button a{
   font-weight: bold;
   font-family: 'Nunito', sans-serif;
 }
 
+
+.sidebox .mediabox .textbox .button{
+  align-self: flex-end;
+}
+
 .featurebox{
   width: 60%;
-  padding: 0;
-  margin: 1rem;
+  padding: 1rem;
+  margin: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -181,27 +248,52 @@ body{
 .featurebox h2{
   margin: 1rem 0 1rem 0;
 }
+.featurebox h1{
+  margin: 2rem;
+}
 
 .sidebox{
   width: 30%;
-  padding: 0;
-  margin: 0;
+  padding: ;
+  margin: ;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: #ffffff1a;
+  background-image: url(../images/zig-zag-wool.png);
+
 }
 
 .sidebox .mediabox{
   display: flex;
   width: 100%;
-  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 1rem;
+  margin: 0 1rem 0 0;
+
+
+
+
+
 
 }
+.sidebox .mediabox .textbox{
+  display: flex;
+  flex-direction: column;
+  width: ;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
 .sidebox .mediabox img{
   width: 42%;
   height: auto;
-  margin: 0 0 1rem 0
+  margin: 0;
+}
+.sidebox .mediabox h4 , h1{
+  margin: 0 0 1rem 0;
 }
 
 .mediabox{
@@ -218,6 +310,7 @@ body{
   height: auto;
 }
 
+
 .featurebox video{
   width: 100%;
   height: auto;
@@ -230,14 +323,124 @@ footer{
 }
 .footercontainer{
   width: 100%;
-  max-width:1250px;
+  max-width:1500px;
   text-align: left;
   margin: 1rem;
 }
 .container3head , .container4head{
   margin: 0 0 2rem 0;
 }
+
+.container3 .mediabox h4{
+  margin: 1rem 0 1rem 0;
+}
+.container3 .mediabox p{
+  margin: 1rem 0;
+}
 .container3{
   background-color: #ffffff1a;
   padding: 1rem;
+}
+
+.container4 .featurebox{
+  padding: 0;
+  margin:1rem;
+
+}
+
+/*small screens */
+@media screen and (max-width: 900px){
+
+  .sitecontainer{
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+  }
+  .container2 .sidebox .mediabox , .container4 .sidebox .mediabox{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    margin: 0;
+
+  }
+
+
+}
+@media screen and (max-width: 650px){
+
+  .mobileimg{
+    display: flex;
+  }
+  .menubar-mobile{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo img{
+    display: none;
+  }
+  .menubar{
+    display: none;
+  }
+  .desktopimg{
+    display: none;
+  }
+
+  .sitecontainer{
+    width: 100%;
+    max-width: 650px;
+    overflow: hidden;
+  }
+
+  .container1 , .container2 , .container3 , .container4{
+    flex-direction: column;
+    align-items: center;
+  }
+  .featurebox{
+    width: 98%;
+    margin: 0;
+  }
+  .sidebox{
+    width: 98%;
+    margin: 1rem 0 0 0;
+    padding: 0;
+  }
+  .mediabox{
+    width: 98%;
+  }
+  .container3 .mediabox{
+    width: 50%;
+  }
+  .container2 .sidebox img , .container4 .sidebox img{
+    margin:1rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .header-container .logo h1{
+    display: none;
+  }
+  .header-container{
+    position: fixed;
+    z-index: 100;
+    background-color: #ffffff80;
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+  .menubar-mobile{
+    width: 100%;
+    margin: 0;
+    padding: 4rem 0 0 0;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  .menubar-mobile img{
+
+  }
 }
