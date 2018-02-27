@@ -57,6 +57,8 @@ header{
   display: flex;
   justify-content: center;
   overflow: hidden;
+  background-color: #ffffff1a;
+  margin: 0 0 1rem 0;
 }
 .header-container{
   width: 100%;
@@ -67,6 +69,7 @@ header{
   align-items: center;
   align-content: center;
   justify-content: space-between;
+
 }
 .header-container .logo{
   display: flex;
@@ -86,7 +89,7 @@ html{
   color:white;
 }
 a{
-  color: ;
+  color:white;
 }
 
 h1, h2 ,h3 , h4 ,h5 ,h6{
@@ -98,17 +101,10 @@ body{
   background-image: url(../images/zig-zag-wool.png);
 }
 
-header{
-  background-color:#ffffff1a;
-}
-.background1{
-  background-color: #ffffff1a;
-  display: flex;
-  justify-content: center;
-  width: 100%;
 
-}
-.background3{
+
+
+.sitecontainer{
   background-color: #ffffff1a;
   display: flex;
   flex-direction: column;
@@ -143,6 +139,7 @@ header{
   flex-direction:row;
   justify-content: center;
   align-content: center;
+  background-color: ;
 }
 
 .container1 .sidebox .mediabox{
@@ -159,7 +156,7 @@ header{
 .button{
   width: 100%;
   padding: 8px 0;
-  background-color: ;
+  background-color:#ffffff1a ;
   text-align: center;
   margin: 1rem 0 0 0;
 }
@@ -192,12 +189,14 @@ header{
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background-color: #ffffff1a;
 }
 
 .sidebox .mediabox{
   display: flex;
   width: 100%;
   overflow: hidden;
+
 }
 .sidebox .mediabox img{
   width: 42%;
@@ -237,4 +236,8 @@ footer{
 }
 .container3head , .container4head{
   margin: 0 0 2rem 0;
+}
+.container3{
+  background-color: #ffffff1a;
+  padding: 1rem;
 }
